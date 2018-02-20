@@ -58,8 +58,6 @@ public class TedAdFront {
 
 
         try {
-
-
             TedAdFront.activity = activity;
             TedAdFront.facebookKey = facebookKey;
             TedAdFront.admobKey = admobKey;
