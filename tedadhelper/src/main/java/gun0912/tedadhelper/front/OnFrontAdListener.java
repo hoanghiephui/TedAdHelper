@@ -11,6 +11,10 @@ public interface OnFrontAdListener {
 
     void onLoaded(int adType);
 
+    void onFaceLoaded(com.facebook.ads.InterstitialAd facebookFrontAD);
+
+    void onAdmobLoaded(com.google.android.gms.ads.InterstitialAd admobFrontAD);
+
     void onAdClicked(int adType);
 
     void onFacebookAdCreated(com.facebook.ads.InterstitialAd facebookFrontAD);
