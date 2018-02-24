@@ -168,7 +168,9 @@ public class TedAdBanner {
         admobBanner.setAdUnitId(admobKey);
 
         admobBanner.loadAd(TedAdHelper.getAdRequest());
-
+        if (onBannerAdListener != null) {
+            onBannerAdListener.onAdmobCreated(admobBanner);
+        }
         admobBanner.setAdListener(new com.google.android.gms.ads.AdListener() {
             @Override
             public void onAdFailedToLoad(int errorCode) {
